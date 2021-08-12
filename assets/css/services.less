@@ -1,0 +1,242 @@
+.provide{
+    .container{
+        .item{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            
+            .left{
+                width: 30%;
+                img{
+                    transform: scale(.8);
+                }
+            }
+            .right{
+                width: 40%;
+                flex-wrap: wrap;
+                h1{
+                    margin-top: 2em;
+                    font-size: 2em;
+                    font-family: MontBold;
+                }
+                p{
+                    font-family: Mont;
+                    color: #828282;
+                    margin-bottom: 2em;
+                }
+                span{
+                    font-family: crim;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    display: inline-block;
+                    margin-bottom: 1.9em;
+                    
+                }
+                .btn{
+                    display:block;
+                    
+                    width: 8em;
+                    height: 4em;
+                    margin: 0;
+                    padding: 0;
+                    border: 1px solid #828282;
+                    p{
+                        line-height: 4em;
+                        &:hover{
+                            color: #fff;
+                            box-shadow: 0px 5px 10px #828282;
+                            background: #828282;
+                        }
+                    }
+                }
+            }
+        }
+        .btm{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 3em;
+            .list{
+                width: 20%;
+                border: 1px solid #828282;
+                text-align: center;
+                line-height: 3em;
+                border-radius: 10px;
+                img{
+                    margin-bottom: 1em;
+                }
+                h2{
+                    font-family: MontBold;
+                    margin-bottom: 1em;
+                }
+                p{
+                    font-family: crim;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        @media screen and (max-width:1000px){
+            .item{
+                .left{
+                    display: none;
+                }
+                .right{
+                    width: 80%;
+                    text-align: center;
+                    .btn{
+                        margin: 0 auto;
+                        margin-bottom: 2em;
+                    }
+                }
+            }
+            .btm{
+                .list{
+                    border-radius: 100%;
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:700px){
+            .btm{
+                .list{
+                    border: 0px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    h2{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scrolling{
+    background: #141414;
+    padding: 10em 0em;
+    .container{
+        .list{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            .top{
+                width: 80%;
+                margin: 3em 0em;
+                h1{
+                    font-family: MontBold;
+                    font-size: 3em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border: 2px solid #fff;
+                    color:#fff;
+                }
+            }
+            .btn{
+                width: 22%;
+               
+                h2{
+                    padding: 1em 1em;
+                    text-align: center;
+                    font-family: MontBold;
+                    color:#fff;
+                    border: 1px solid #fff;
+                    display: inline-block;
+                    &:hover{
+                        cursor: pointer;
+                        background: #fff;
+                        box-shadow: 0px 5px 10px #fff;
+                        color: #141414;
+                    }
+                }
+                
+            }
+        }
+        @media screen and (max-width:700px) {
+            .list{
+                .top{
+                    h1{
+                        font-size: 1.5em;
+                    }
+                }
+                .btn{
+                    h2{
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.type{
+    padding: 10em 0em;
+    .container{
+        
+        .list{
+
+            display: flex;
+           margin-bottom: 8em;
+            
+            justify-content: space-between;
+            .left{
+                width: 50%;
+                margin-right: 4em;
+                span{
+                    font-family: crim;
+                    color: #828282;
+                    font-size: 1.2em;
+                    margin-bottom: 1em;
+                }
+                h2{
+                    font-family: MontBold;
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+                p{
+                    font-family: Mont;
+                    color: #828282;
+                    margin-bottom: 4em;
+                }
+                .btn{
+                    margin: 0;
+                    padding: 0;
+                    border: 1px solid #141414;
+                    h4{
+                        color: #141414;
+                        padding: 1em 1.5em;
+                        font-family: MontBold;
+
+                    
+                    &:hover{
+                        color: #fff;
+                        background: #141414;
+                        box-shadow: 0px 5px 10px #141414;
+                    }
+                }
+                }
+            }
+            .right{
+                width: 50%;
+
+            }
+        }
+        @media screen and (max-width:768px) {
+            .list{
+                .left{
+                    width: 100%;
+                    text-align: center;
+                    margin-right: 0em;
+                }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+}

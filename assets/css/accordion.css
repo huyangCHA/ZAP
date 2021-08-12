@@ -1,0 +1,175 @@
+.subject .container h1 {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  font-family: MontBold;
+  margin-top: 2em;
+}
+.subject .container .list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.subject .container .list .left {
+  width: 30%;
+}
+.subject .container .list .left .item {
+  margin-bottom: 5em;
+}
+.subject .container .list .left .item .icon {
+  float: left;
+  width: 30%;
+}
+.subject .container .list .left .item .text h2 {
+  font-family: MontBold;
+  font-size: 0.8em;
+}
+.subject .container .list .left .item .text p {
+  font-family: crim;
+}
+.subject .container .list .center {
+  width: 30%;
+}
+.subject .container .list .right {
+  width: 30%;
+}
+.subject .container .list .right .item .icon {
+  float: right;
+}
+.subject .container .list .right .item .text {
+  margin-bottom: 4em;
+  width: 60% ;
+  float: left;
+  height: 5.5em;
+}
+.subject .container .list .right .item .text h2 {
+  font-family: MontBold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.subject .container .list .right .item .text p {
+  width: 100%;
+  font-family: crim;
+}
+@media screen and (max-width: 1000px) {
+  .subject .container .list .center {
+    display: none;
+  }
+  .subject .container .list .left {
+    width: 45%;
+  }
+  .subject .container .list .right {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subject .container .list .left {
+    width: 45%;
+  }
+  .subject .container .list .left .icon {
+    display: none;
+  }
+  .subject .container .list .right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45%;
+  }
+  .subject .container .list .right .item .icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subject .container .list {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .subject .container .list .left {
+    width: 100%;
+  }
+  .subject .container .list .left .icon {
+    display: block;
+  }
+  .subject .container .list .right {
+    width: 100%;
+  }
+  .subject .container .list .right .item .icon {
+    display: block;
+  }
+}
+.assembly {
+  padding: 5em 0em;
+}
+.assembly .container .list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.assembly .container .list .left {
+  width: 70%;
+}
+.assembly .container .list .left h1 {
+  font-family: MontBold;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.assembly .container .list .left p {
+  font-family: crim;
+  color: #949494;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.assembly .container .list .left .btm {
+  padding: 1em 1em;
+  text-align: center;
+  border: 1px solid #f1bf55;
+  color: #f1bf55;
+  font-family: MontBold;
+  display: none;
+  transition: all linear 0.4s;
+}
+.assembly .container .list .left .btm:hover {
+  cursor: pointer;
+  background: #f1bf55;
+  color: aliceblue;
+  box-shadow: 0px 5px 10px #f1bf55;
+  transform: rotateY(3em);
+}
+.assembly .container .list .right {
+  width: 25%;
+}
+.assembly .container .list .right h3 {
+  font-family: Mont;
+  font-size: 1.6em;
+  color: black;
+  margin-bottom: 1em;
+}
+.assembly .container .list .right h2 {
+  font-family: MontBold;
+  font-size: 1.5em;
+  color: #f1bf55;
+  margin-bottom: 1em;
+}
+.assembly .container .list .right .btn {
+  padding: 1em 1em;
+  border: 1px solid #f1bf55;
+  color: #f1bf55;
+  font-family: MontBold;
+}
+.assembly .container .list .right .btn:hover {
+  cursor: pointer;
+  background: #f1bf55;
+  color: aliceblue;
+  box-shadow: 0px 5px 10px #f1bf55;
+}
+@media screen and (max-width: 1000px) {
+  .assembly .container .list .left .btm {
+    display: block;
+  }
+  .assembly .container .list .right {
+    display: none;
+  }
+}

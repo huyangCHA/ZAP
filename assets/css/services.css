@@ -1,0 +1,205 @@
+.provide .container .item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.provide .container .item .left {
+  width: 30%;
+}
+.provide .container .item .left img {
+  transform: scale(0.8);
+}
+.provide .container .item .right {
+  width: 40%;
+  flex-wrap: wrap;
+}
+.provide .container .item .right h1 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-family: MontBold;
+}
+.provide .container .item .right p {
+  font-family: Mont;
+  color: #828282;
+  margin-bottom: 2em;
+}
+.provide .container .item .right span {
+  font-family: crim;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1.9em;
+}
+.provide .container .item .right .btn {
+  display: block;
+  width: 8em;
+  height: 4em;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #828282;
+}
+.provide .container .item .right .btn p {
+  line-height: 4em;
+}
+.provide .container .item .right .btn p:hover {
+  color: #fff;
+  box-shadow: 0px 5px 10px #828282;
+  background: #828282;
+}
+.provide .container .btm {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.provide .container .btm .list {
+  width: 20%;
+  border: 1px solid #828282;
+  text-align: center;
+  line-height: 3em;
+  border-radius: 10px;
+}
+.provide .container .btm .list img {
+  margin-bottom: 1em;
+}
+.provide .container .btm .list h2 {
+  font-family: MontBold;
+  margin-bottom: 1em;
+}
+.provide .container .btm .list p {
+  font-family: crim;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 1000px) {
+  .provide .container .item .left {
+    display: none;
+  }
+  .provide .container .item .right {
+    width: 80%;
+    text-align: center;
+  }
+  .provide .container .item .right .btn {
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .provide .container .btm .list {
+    border-radius: 100%;
+  }
+  .provide .container .btm .list p {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .provide .container .btm .list {
+    border: 0px;
+  }
+  .provide .container .btm .list:hover {
+    cursor: pointer;
+  }
+  .provide .container .btm .list h2 {
+    display: none;
+  }
+}
+.scrolling {
+  background: #141414;
+  padding: 10em 0em;
+}
+.scrolling .container .list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.scrolling .container .list .top {
+  width: 80%;
+  margin: 3em 0em;
+}
+.scrolling .container .list .top h1 {
+  font-family: MontBold;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.scrolling .container .list .btn {
+  width: 22%;
+}
+.scrolling .container .list .btn h2 {
+  padding: 1em 1em;
+  text-align: center;
+  font-family: MontBold;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.scrolling .container .list .btn h2:hover {
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0px 5px 10px #fff;
+  color: #141414;
+}
+@media screen and (max-width: 700px) {
+  .scrolling .container .list .top h1 {
+    font-size: 1.5em;
+  }
+  .scrolling .container .list .btn h2 {
+    font-size: 0.8em;
+  }
+}
+.type {
+  padding: 10em 0em;
+}
+.type .container .list {
+  display: flex;
+  margin-bottom: 8em;
+  justify-content: space-between;
+}
+.type .container .list .left {
+  width: 50%;
+  margin-right: 4em;
+}
+.type .container .list .left span {
+  font-family: crim;
+  color: #828282;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.type .container .list .left h2 {
+  font-family: MontBold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.type .container .list .left p {
+  font-family: Mont;
+  color: #828282;
+  margin-bottom: 4em;
+}
+.type .container .list .left .btn {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #141414;
+}
+.type .container .list .left .btn h4 {
+  color: #141414;
+  padding: 1em 1.5em;
+  font-family: MontBold;
+}
+.type .container .list .left .btn h4:hover {
+  color: #fff;
+  background: #141414;
+  box-shadow: 0px 5px 10px #141414;
+}
+.type .container .list .right {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .type .container .list .left {
+    width: 100%;
+    text-align: center;
+    margin-right: 0em;
+  }
+  .type .container .list .right {
+    display: none;
+  }
+}

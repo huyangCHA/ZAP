@@ -1,0 +1,166 @@
+.header {
+  background-color: #333333;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  transition: all linear 0.4s;
+}
+.header .navbar {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0;
+}
+.header .navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar .navbar-header .navbar-brand {
+  width: 100%;
+}
+.header .navbar .navbar-header .navbar-brand img {
+  width: 80%;
+  line-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar .navbar-header .navbar-brand img {
+    display: none;
+  }
+}
+.header .navbar .navbar-header button span {
+  color: #fff;
+  font-weight: lighter;
+}
+.header .navbar .nav a {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: all linear 0.3s;
+}
+.footer {
+  background: #202020;
+}
+.footer .container .list {
+  margin: 4em 0em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: 'Mont';
+  transition: all linear 0.3s;
+}
+.footer .container .list .one {
+  width: 30%;
+}
+.footer .container .list .one h2 {
+  color: #eeb013;
+  margin-bottom: 2em;
+  font-family: 'Mont';
+}
+.footer .container .list .one p {
+  color: #3f3f3f;
+  margin-bottom: 4em;
+  font-family: 'Mont';
+}
+.footer .container .list .one img {
+  background: #3f3f3f;
+}
+.footer .container .list .two {
+  width: 13%;
+  font-family: 'Mont';
+}
+.footer .container .list .two h2 {
+  color: #fff;
+  margin-bottom: 2em;
+}
+.footer .container .list .two ul li {
+  font-size: 0.7em;
+  color: #3f3f3f;
+}
+.footer .container .list .two ul li:hover {
+  color: #eeb013;
+  cursor: pointer;
+}
+.footer .container .list .three {
+  width: 25%;
+}
+.footer .container .list .three h2 {
+  color: #fff;
+  margin-bottom: 2em;
+}
+.footer .container .list .three p {
+  margin-bottom: 1.5em;
+  color: #3f3f3f;
+}
+.footer .container .list .four {
+  width: 25%;
+}
+.footer .container .list .four h2 {
+  color: #fff;
+  margin-bottom: 2em;
+}
+.footer .container .list .four .box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer .container .list .four .box .pic {
+  width: 30%;
+  margin-bottom: 2em;
+}
+.footer .container .list .four .box .pic:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #eeb013;
+}
+.footer .container .btm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.footer .container .btm .left p {
+  color: #3f3f3f;
+  font-family: 'Mont';
+}
+.footer .container .btm .right a img {
+  margin-left: 2em;
+}
+.footer .container .btm .right a img:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #eeb013;
+}
+@media screen and (max-width: 1000px) {
+  .footer .container .list .one img {
+    display: none;
+  }
+  .footer .container .list .four {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer .container .list {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .footer .container .list .one {
+    width: 100%;
+  }
+  .footer .container .list .two {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .footer .container .list .three {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .footer .container .btm .left {
+    display: none;
+  }
+  .footer .container .btm .right {
+    margin: 0 auto;
+  }
+}

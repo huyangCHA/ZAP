@@ -1,0 +1,178 @@
+.banner {
+  background: #333333;
+}
+.banner .container .subject {
+  display: flex;
+  justify-content: center;
+  margin: 6em 0em;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.banner .container .subject .top {
+  width: 100%;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.banner .container .subject .top h2 {
+  line-height: 1em;
+  font-size: 3em;
+  font-family: 'MontBold';
+}
+.banner .container .subject .top h1 {
+  font-size: 5em;
+  font-family: 'MontBold';
+  line-height: 1em;
+}
+.banner .container .subject .top p {
+  font-family: 'crim';
+}
+.banner .container .subject .btm {
+  width: 3em;
+  height: 3em;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-bottom: 4em;
+}
+.banner .container .subject .btm span {
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 3em;
+  font-family: 'crim';
+}
+.banner .container .subject .btm span:hover {
+  background: #fff;
+  cursor: pointer;
+  color: #000;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px #fff;
+}
+@media screen and (max-width: 768px) {
+  .banner .container .subject .top h2 {
+    font-size: 1.5em;
+  }
+  .banner .container .subject .top h1 {
+    font-size: 2.5em;
+  }
+}
+.welcome .container .top {
+  padding: 5em 0em;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.welcome .container .top .left {
+  width: 20%;
+}
+.welcome .container .top .left img {
+  transform: scale(0.7);
+}
+.welcome .container .top .right {
+  width: 60%;
+}
+.welcome .container .top .right h6 {
+  font-size: 1.4em;
+  font-family: crim;
+  color: #9d9d9d;
+  margin-bottom: 1.5em;
+}
+.welcome .container .top .right h1 {
+  font-family: MontBold;
+  font-size: 2em;
+}
+.welcome .container .top .right p {
+  font-family: Mont;
+  color: #929292;
+  margin-bottom: 4em;
+}
+.welcome .container .top .right .item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 4em;
+}
+.welcome .container .top .right .item .icon {
+  width: 10%;
+}
+.welcome .container .top .right .item .info {
+  width: 20%;
+}
+.welcome .container .top .right .item .info span {
+  line-height: 5em;
+  font-family: Mont;
+  color: #000;
+}
+.welcome .container .top .right .btn {
+  border: 1px solid #141414;
+  margin: 0;
+  padding: 0;
+  width: 10em;
+  height: 4em;
+  line-height: 4em;
+}
+.welcome .container .top .right .btn:hover {
+  color: #fff;
+  background: #141414;
+  box-shadow: 0px 5px 10px #333333;
+}
+.welcome .container .top .right .btn span {
+  font-family: MontBold;
+}
+@media screen and (max-width: 1200px) {
+  .welcome .container .top .left {
+    display: none;
+  }
+  .welcome .container .top .right {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .welcome .container .top .right .item .icon {
+    width: 30%;
+  }
+  .welcome .container .top .right .item .info {
+    display: none;
+  }
+}
+.work .title {
+  text-align: center;
+}
+.work .title h1 {
+  font-size: 2em;
+  font-family: MontBold;
+  margin-bottom: 1em;
+}
+.work .title img {
+  margin-bottom: 1em;
+}
+.work .title p {
+  font-family: crim;
+  font-size: 1.5em;
+  color: #929292;
+  margin-bottom: 2em;
+}
+.work .center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.work .center ul li {
+  padding: 0em 1em;
+}
+.work .subject .one .list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.work .subject .one .list .type {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .work .subject .one .list .type {
+    width: 50%;
+  }
+}
